@@ -1,3 +1,5 @@
+double? res;
+
 void main(){
     /* Types datas in the variables*/
     String name = "GabSilva";
@@ -18,4 +20,11 @@ void main(){
     print(test2);
     
     print("O número do PI é $PI");
+    
+    sum(50,20);
+    print(res);
+}
+
+void sum(double a, double b) {
+    res = a + b;
 }
