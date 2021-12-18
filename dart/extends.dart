@@ -22,6 +22,16 @@ class Cachorro extends Animal {
         fofura += 10;
         print("Fofura do $nome aumentou para $fofura!!!");
     }
+
+    @override
+    void makeSound(){
+        print("$nome fez au au!");
+    }
+
+    @override
+    String toString(){
+        return "Cachorro | Nome: $nome, Peso: $peso, Fofura: $fofura";
+    }
 }
 
 class Gato extends Animal {
@@ -32,6 +42,16 @@ class Gato extends Animal {
         return true;
     }
 
+    @override
+    void makeSound(){
+        print("$nome fez miau!");
+    }
+
+    @override
+    String toString(){
+        return "Gato | Nome: $nome, Peso: $peso";
+    }
+
 }
 
 void main() {
@@ -40,8 +60,10 @@ void main() {
     dog.makeSound();
     dog.eat();
     dog.playing();
+    print(dog);
 
     Gato cat = Gato("Nephew",10.0);
+    cat.makeSound();
     print("Esta amigavel? ${cat.isFriendly()}");
-    
+    print(cat);
 }
