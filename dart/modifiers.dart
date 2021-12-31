@@ -1,6 +1,6 @@
 class Valores{
     
-    static int vezesClicado;
+    static int? vezesClicado;
 
 }
 
